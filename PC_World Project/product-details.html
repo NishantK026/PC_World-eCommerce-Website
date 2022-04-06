@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>All Products - PC World | Ecommerce Webiste Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Account</a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-md">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link text-white btn" id="cart" type="button" data-toggle="modal"
+                        data-target="#exampleModalScrollable" onclick="cart()" href="#beauty">
+                        My Cart</a>
+                    </li>
+              </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>  
+
+    <!----------single product ------------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product-1.jpg" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/product-1.1.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/product-1.2.jpg" width="100%" class="smallImg">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-2">
+                <p1>Home / GPU</p1>
+                <h1>RTX 3090 GPU</h1>
+                <h4>$1499.00</h4>
+                <select>
+                    <option>Select Colour</option>
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Purple</option>
+                </select>
+                <input type="number" value="1">
+                <div class="text-center"><a tabindex="0" onclick="addToCart(1)" class="btn">Add to cart</a></div>
+                <h3>Product Details</h3>
+                <br>
+                <p1>The GeForce RTX™ 3090 is a big ferocious GPU (BFGPU) with TITAN class performance. It’s powered by Ampere—NVIDIA’s 2nd gen RTX architecture—doubling down on ray tracing and AI performance with enhanced Ray Tracing (RT) Cores, Tensor Cores, and new streaming multiprocessors. Plus, it features a staggering 24 GB of G6X memory, all to deliver the ultimate gaming experience.</p1>
+            </div>
+        </div>
+    </div>
+<!-----title------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <a href="products.html"><p1>View More</p1></a>
+        </div>
+    </div>
+    <div class="small-container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/product-5.jpg">
+                    <h4>Razer Book</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+    
+                    </div>
+                    <p1>$999.00</p1>
+                    <div class="text-center"><a tabindex="0" onclick="addToCart(5)" class="btn">Add to cart</a></div>
+
+                </div>
+                <div class="col-4">
+                    <img src="images/product-6.jpg">
+                    <h4>Razer Tomahawk Gaming Chassis</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+    
+                    </div>
+                    <p1>$699.00</p1>
+                    <div class="text-center"><a tabindex="0" onclick="addToCart(6)" class="btn">Add to cart</a></div>
+
+                </div>
+                <div class="col-4">
+                    <img src="images/product-7.jpg">
+                    <h4>RAZER HUNTSMAN V2</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p1>$399.00</p1>
+                    <div class="text-center"><a tabindex="0" onclick="addToCart(7)" class="btn">Add to cart</a></div>
+
+                </div>
+                <div class="col-4">
+                    <img src="images/product-8.jpg">
+                    <h4>Razer Mamba Mouse</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+    
+                    </div>
+                    <p1>$199.00</p1>
+                    <div class="text-center"><a tabindex="0" onclick="addToCart(8)" class="btn">Add to cart</a></div>
+
+                </div>
+            </div>
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+    <!-- grocery part ends here -->
+    <!-- modal starts here -->
+    <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+      aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalScrollableTitle">My Cart</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- listing items starts -->
+            <div>
+              <ul class="list">
+  
+              </ul>
+              <div>
+                <h3 class="bill px-5">Select Something</h3>
+              </div>
+              <div>
+                <a href="checkout.html" class="btn checkout m-3">Checkout</a>
+              </div>
+            </div>
+            <!-- listing items ends -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal ends here -->
+    <!-- <button id="cart"  type="button" class="btn m-5" data-toggle="modal" data-target="#exampleModalScrollable" onclick="cart()">My Cart</button>
+    -->
+    <!-----------footer-------------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <p1>"Love and care for computers, this is how our work is done."</p1>
+                    <div class="app-logo"></div>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Useful Links:</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return/Refund Policy</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Group - Nishant 20BCE1604</p>
+        </div>
+    </div>
+    <!-- script tags -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+    <script>
+        var menuitems = document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px")
+                {
+                    menuitems.style.maxHeight="200px"
+                }
+            else
+                {
+                    menuitems.style.maxHeight="0px"
+                }
+        }
+    </script>
+  </body>
+  
+  </html>
